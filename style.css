@@ -1,0 +1,280 @@
+/* reset style */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+/* img{
+    max-width: %;
+} */
+header{
+     background-color: #d6bce6;
+}
+/* comman style */
+.common-btn{
+    background-color: #c248b0;
+    padding: 6px 10px ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #dae8ec;
+    border: none;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.common-btn:hover{
+    background-color: #7209b7;
+    cursor: pointer;
+}
+nav{
+   
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 8px 5px ;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo-bi{
+    color: #c248b0;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+}
+ul li a {
+    text-decoration: none;
+}
+
+
+
+/* hero section style */
+.hero-parent-root{
+     background-color: #eae0f1;
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.common-btn1{
+    background-color: #dae8ec;
+    padding: 6px 10px ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #b5179e ;
+    border: 0.5px solid ;
+}
+.common-btn1:hover{
+    background-color: #9854c6;
+    cursor: pointer;
+}
+.hero-left-1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+.hero-left h2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.hero-left-btn-parent{
+    margin-top: 10px;
+    gap: 20px;
+}
+
+
+/* about us css */
+.about-parent{
+    background-color: #eae0f1;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 70px;
+    text-align: center;
+
+}
+.about-parent p {
+    margin:20px 0;
+}
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.about-box-parent .box {
+    background-color: #decaec;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+/* what i dosection css */
+.what-i-do-parent{
+    margin: 60px auto;
+    text-align: center;
+}
+.what-i-do-card-containar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.what-i-do-card-containar .what-i-do-card {
+    border: 2px solid #d6bce6;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: left;
+}
+.what-i-do-card-containar .what-i-do-card h2{
+    margin:10px ;
+}
+
+.what-i-do-card-containar .what-i-do-card p{
+    color: #777a7a;
+    font-size: 15px;
+}
+
+/* resume section style  */
+
+.resume{
+    margin: 70px auto;
+}
+.resume h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.resume-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.resume-box{
+    flex: 1;
+}
+.resume-box h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.resume-card{
+    padding: 20px 0;
+}
+
+.resume-card h4{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.resume-card h5{
+    color: #414042;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.resume-card p{
+    color: #414042;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.resume-card hr{
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #d6bce6;
+}
+.resume-btn{
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* amazing wark section xtyle */
+.my-amazing-parent{
+    text-align: center;
+    
+}
+.gallery{
+    margin-top: 20px;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six"
+    
+}
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+   grid-area: six;
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* footer style */
+
+footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+    background-color:#eae0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+footer form{
+    padding: 20px ;
+}
+.footer-left,
+.footer-right{
+    width: 50%;
+}
+.footer-left p{
+    margin: 10px;
+}
+footer form input, footer form textarea {
+    border: none;
+    outline: none;
+    background-color: #decaec;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.footer-icon-parent span {
+    color: #c248b0 ;
+    font-size: 25px;
+}
